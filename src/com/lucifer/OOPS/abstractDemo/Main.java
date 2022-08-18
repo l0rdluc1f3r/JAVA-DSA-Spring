@@ -1,10 +1,10 @@
-package com.lucifer.abstractDemo;
+package com.lucifer.OOPS.abstractDemo;
 
 public class Main {
     public static void main(String[] args) {
         Son son = new Son(22);
         son.career();
-        
+
 
         Daughter daughter = new Daughter(20);
         daughter.career();

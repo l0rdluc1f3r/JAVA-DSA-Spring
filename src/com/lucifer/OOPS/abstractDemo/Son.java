@@ -1,4 +1,4 @@
-package com.lucifer.abstractDemo;
+package com.lucifer.OOPS.abstractDemo;
 
 public class Son extends Parent{
     public Son(int age){
