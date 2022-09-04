@@ -1,11 +1,9 @@
-package com.lucifer.DataStructures;
+package com.lucifer.DataStructures.LinkedList.Rewise;
 
 public class LL {
     private Node head;
     private Node tail;
-
     private int size;
-
     public LL(){
         this.size = 0;
     }
@@ -19,6 +17,7 @@ public class LL {
         }
         size += 1;
     }
+
     public void insertLast(int val){
         if(tail == null){
             insertFirst(val);
@@ -29,6 +28,7 @@ public class LL {
         tail = node;
         size++;
     }
+
     public void insert(int val, int index){
         if(index == 0){
             insertFirst(val);
@@ -46,6 +46,7 @@ public class LL {
         temp.next = node;
         size++;
     }
+
     public int deleteFirst(){
         int val = head.value;
         head = head.next;
@@ -55,6 +56,7 @@ public class LL {
         size--;
         return val;
     }
+
     public int deleteLast(){
         if(size <= 1){
             return deleteFirst();
@@ -65,11 +67,12 @@ public class LL {
         tail.next = null;
         return val;
     }
+
     public int delete(int index){
         if(index == 0){
             return deleteFirst();
         }
-        if(index == size -1){
+        if(index == size - 1){
             return deleteLast();
         }
         Node prev = get(index - 1);
@@ -77,7 +80,8 @@ public class LL {
         prev.next = prev.next.next;
         return val;
     }
-    public Node get(int index) {
+
+    public Node get(int index){
         Node node = head;
         for (int i = 0; i < index; i++) {
             node = node.next;
@@ -87,7 +91,7 @@ public class LL {
     public void display(){
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.value+ " -> ");
+            System.out.print(temp.value + " -> ");
             temp = temp.next;
         }
         System.out.println("END");
@@ -105,30 +109,3 @@ public class LL {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
