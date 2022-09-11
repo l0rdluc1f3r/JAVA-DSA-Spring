@@ -1,0 +1,2 @@
+module JAVA.and.DSA {
+}
