@@ -94,25 +94,16 @@ public class InterviewQues {
     }
 
     // LEETCODE 876
-    public ListNode middleNode(ListNode head) {
+    public ListNode middleNode(ListNode head){
         ListNode s = head;
         ListNode f = head;
+
         while(f != null && f.next != null){
             s = s.next;
-            f = f.next.next;
+            f = f.next;
         }
         return s;
     }
-
-
-
-
-
-
-
-
-
-
 
 
     class ListNode {
